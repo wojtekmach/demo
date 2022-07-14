@@ -8,5 +8,5 @@ $ cd demo
 $ mix deps.get
 $ mix release --overwrite
 $ open _build/dev
-# double-click on demo.app
+# double-click on Demo.app
 ```
