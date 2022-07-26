@@ -12,7 +12,7 @@ defmodule Demo.MixProject do
         demo: [
           steps: [
             :assemble,
-            &AppBuilder.bundle/1
+            &AppBundler.bundle/1
           ]
         ]
       ]
@@ -31,8 +31,7 @@ defmodule Demo.MixProject do
   defp deps do
     [
       {:plug_cowboy, "~> 2.0"},
-      {:app_builder,
-       github: "livebook-dev/livebook", sparse: "app_builder", branch: "wm-app-fixes"}
+      {:app_bundler, github: "livebook-dev/livebook", sparse: "app_bundler", ref: "2ac02d9"}
     ]
   end
 end
